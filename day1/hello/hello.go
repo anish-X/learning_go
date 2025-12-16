@@ -11,7 +11,7 @@ func main() {
 	log.SetPrefix("greetings: ") // greetings prefix is added to every log message
 	log.SetFlags(0)
 
-	message, err := greetings.Hello("")
+	message, err := greetings.Hello("Anish")
 
 	if err != nil {
 		log.Println("check") // --> greetings: check
