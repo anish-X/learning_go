@@ -3,7 +3,7 @@ package greetings
 import "fmt"
 
 func Hello(name string) string { // Hello returns a greeting for the names person (string return type)
-	message := fmt.Sprintf("Hi, welcome!", name)  /*
+	message := fmt.Sprintf("Hi, %v. welcome!", name)  /*
 																										:= operator is shortcut for 
 																											{
 																												var message string
@@ -13,5 +13,5 @@ func Hello(name string) string { // Hello returns a greeting for the names perso
 																										to determine the variable's type
 
 																											*/
-	return message;
+	return message
 }
