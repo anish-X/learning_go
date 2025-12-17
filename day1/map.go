@@ -1,12 +1,10 @@
-// Online Go compiler to run Golang program online
-// Print "Try programiz.pro" message
-
 package main
 
 import (
 	"fmt"
 )
 
+// go maps doesn't return error on not finding the key instead sends 0/""/false and false
 var timezone = map[string]int{
 	"UTC": 0 * 60 * 60,
 	"EST": -5 * 60 * 60,
@@ -28,7 +26,7 @@ func offset(tz string) (int, bool) {
 		return seconds, ok
 		}
 	*/
-	if seconds, ok = timezone[tz]; ok {
+	if seconds, ok = timezone[tz]; ok { //
 		return seconds, ok
 	}
 	fmt.Println("unknown time zone:", tz)
